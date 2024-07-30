@@ -1,0 +1,35 @@
+﻿<ui:FluentWindow x:Class="EclipseLauncher.MainLauncher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EclipseLauncher"
+        mc:Ignorable="d"
+        Title="Eclipse Launcher" Height="565" Width="969" WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" Closing="Window_Closing"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:icons="http://schemas.lepo.co/wpfui/icons">
+    <Grid>
+
+        <StackPanel>
+            <ui:TitleBar Title="Eclipse Launcher" ShowHelp="False" ShowMaximize="False"/>
+            <ui:NavigationView Margin="0,0,0,0" Height="516" AlwaysShowHeader="False" IsBackButtonVisible="Collapsed" PaneDisplayMode="Left" PaneOpened="NavigationView_PaneOpened" PaneClosed="NavigationView_PaneClosed" Background="Transparent">
+                <ui:NavigationView.MenuItems>
+                    <ui:NavigationViewItem x:Name="Home" Content="Home" Cursor="Arrow" Tag="Home" Click="NavigationViewItem_Click">
+                        <ui:NavigationViewItem.Icon>
+                            <ui:ImageIcon Source="pack://application:,,,/;component/Resources/Home.png" Margin="12 , 12, 12, 12"/>
+                            <!-- Icono Home -->
+                        </ui:NavigationViewItem.Icon>
+                    </ui:NavigationViewItem>
+                    <ui:NavigationViewItem x:Name="Settings" Content="Settings" Cursor="Arrow" VerticalAlignment="Top" Margin="0, 380, 0, 0" Tag="Settings" Click="NavigationViewItem_Click">
+                        <ui:NavigationViewItem.Icon>
+                            <ui:ImageIcon Source="pack://application:,,,/;component/Resources/Settings.png" Margin="12 , 12, 12, 12"/>
+                            <!-- Icono Settings -->
+                        </ui:NavigationViewItem.Icon>
+                    </ui:NavigationViewItem>
+                </ui:NavigationView.MenuItems>
+            </ui:NavigationView>
+            <Frame x:Name="ContentFrame" NavigationUIVisibility="Hidden" Width="917" Height="499" Margin="330,-528,0,0"/>
+        </StackPanel>
+    </Grid>
+</ui:FluentWindow>
