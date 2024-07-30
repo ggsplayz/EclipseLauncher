@@ -15,7 +15,7 @@ namespace EclipseLauncher
     /// 
     /// VALID KEY TO TEST IS f6d209ccb6240d88390924dfd447a6a8
     /// 
-
+    /// BTW Do ur own, skidder!!!
     public partial class Key
     {
         public Key()
