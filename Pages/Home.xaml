@@ -1,0 +1,16 @@
+﻿<Page x:Class="EclipseLauncher.Pages.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EclipseLauncher.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="516" d:DesignWidth="917"
+      Title="Home"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml">
+    <Grid>
+        <ui:TextBlock Text="Welcome to Eclipse" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Normal" FontSize="46" Margin="0,36,0,0" Foreground="White"/>
+        <ui:TextBlock Text="Press &quot;Play&quot; to start using Eclipse" TextWrapping="Wrap" Margin="146,108,146,238" TextAlignment="Center" Foreground="White" FontSize="16"/>
+        <Button x:Name="LaunchBtn" Content="Play" HorizontalAlignment="Center" Height="46" Width="136" Click="LaunchBtn_Click" />
+    </Grid>
+</Page>
